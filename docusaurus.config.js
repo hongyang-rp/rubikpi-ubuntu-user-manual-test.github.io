@@ -81,10 +81,10 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'RUBIK Pi Ubuntu24.04 User Guide',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'RUBIK Pi Logo',
+          src: 'img/rubik-pi-logo.png',
         },
         items: [
           {
@@ -95,7 +95,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/rubikpi-ai',
             label: 'GitHub',
             position: 'right',
           },
@@ -118,7 +118,7 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://stackoverflow.com/questions/tagged/qualcomm',
               },
               {
                 label: 'Discord',
@@ -126,7 +126,7 @@ const config = {
               },
               {
                 label: 'X',
-                href: 'https://x.com/docusaurus',
+                href: 'https://x.com/Qualcomm',
               },
             ],
           },
@@ -139,7 +139,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/rubikpi-ai',
               },
             ],
           },
