@@ -1,9 +1,7 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# 快速入门
-
-## 开始使用魔方派 3
+# 开始使用魔方派 3
 
 本快速入门指南可帮助您设置魔方派 3，用于在基于 Ubuntu24.04 的环境中探索和试用端到端的多媒体和 AI 应用程序。此外，本指南还提供了关于如何与运行 Linux、Windows(®) 和 macOS(®) 的主机建立基本通信的说明。
 
@@ -15,8 +13,7 @@ import TabItem from '@theme/TabItem';
 
 ![](../images/image.png)
 
-<Tabs>
-<TabItem value="包装内容" label="包装内容">
+## 包装内容
 
 ![](../images/image-1.png)
 
@@ -25,13 +22,13 @@ import TabItem from '@theme/TabItem';
 * 魔方派贴纸
 
 * 快速开始卡片
-</TabItem>
-<TabItem value="熟悉板卡" label="熟悉板卡">
-![](../images/image-148.png)
+
+## 熟悉板卡
+![](../images/data-3.svg)
 
 ![](../images/image-2.png)
-</TabItem>
-<TabItem value="常规工作流" label="常规工作流">
+
+## 常规工作流
 ![](../images/20250728-143657.jpg)
 
 | Task                | Operation                                                                 |
@@ -39,5 +36,3 @@ import TabItem from '@theme/TabItem';
 | 更新软件     | <p>1. 下载镜像。</p><p>2. 使设备进入紧急下载（EDL）模式。</p><p>3. 配置通用闪存存储 (UFS)，并刷写配置数据表。（CDT）</p><p>4. 使用 Qualcomm Download (QDL) 工具进行刷写。</p> |
 | 设置设备   | <p>1. 设置调试串口。</p><p>2. 验证 Ubuntu 24.04 版本。</p><p>3. 连接到网络，连接到 SSH 和 HDMI 显示器。</p> |
 | 运行示例应用程序 | 运行多媒体和 AI 示例应用程序。                                |
-</TabItem>
-</Tabs>
