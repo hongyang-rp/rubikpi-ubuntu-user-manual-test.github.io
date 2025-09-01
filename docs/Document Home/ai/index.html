@@ -5,8 +5,8 @@
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">人工智能 | RUBIK Pi Ubuntu24.04 user Guide</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://rubikpi-ubuntu-user-manual-test.github.io/rubikpi-ubuntu-user-manual-test.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://rubikpi-ubuntu-user-manual-test.github.io/rubikpi-ubuntu-user-manual-test.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://rubikpi-ubuntu-user-manual-test.github.io/rubikpi-ubuntu-user-manual-test.github.io/docs/Document Home/ai"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="人工智能 | RUBIK Pi Ubuntu24.04 user Guide"><meta data-rh="true" name="description" content="本章节将介绍Qualcomm AI Runtime SDK的使用流程，Qualcomm AI Runtime SDK可以帮助AI开发者便捷地使用高通的高性能机器学习推理硬件。它支持TensorFlow、PyTorch、ONNX和LiteRT等框架已经训练好的神经网络模型直接或是经过转换在RUBIK Pi 3上快速高效地运行。"><meta data-rh="true" property="og:description" content="本章节将介绍Qualcomm AI Runtime SDK的使用流程，Qualcomm AI Runtime SDK可以帮助AI开发者便捷地使用高通的高性能机器学习推理硬件。它支持TensorFlow、PyTorch、ONNX和LiteRT等框架已经训练好的神经网络模型直接或是经过转换在RUBIK Pi 3上快速高效地运行。"><link data-rh="true" rel="icon" href="/rubikpi-ubuntu-user-manual-test.github.io/img/favicon.png"><link data-rh="true" rel="canonical" href="https://rubikpi-ubuntu-user-manual-test.github.io/rubikpi-ubuntu-user-manual-test.github.io/docs/Document Home/ai"><link data-rh="true" rel="alternate" href="https://rubikpi-ubuntu-user-manual-test.github.io/rubikpi-ubuntu-user-manual-test.github.io/docs/Document Home/ai" hreflang="en"><link data-rh="true" rel="alternate" href="https://rubikpi-ubuntu-user-manual-test.github.io/rubikpi-ubuntu-user-manual-test.github.io/docs/Document Home/ai" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ubuntu System V1.0.0","item":"https://rubikpi-ubuntu-user-manual-test.github.io/rubikpi-ubuntu-user-manual-test.github.io/docs/category/ubuntu-system-v100"},{"@type":"ListItem","position":2,"name":"人工智能","item":"https://rubikpi-ubuntu-user-manual-test.github.io/rubikpi-ubuntu-user-manual-test.github.io/docs/Document Home/ai"}]}</script><link rel="alternate" type="application/rss+xml" href="/rubikpi-ubuntu-user-manual-test.github.io/blog/rss.xml" title="RUBIK Pi Ubuntu24.04 user Guide RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/rubikpi-ubuntu-user-manual-test.github.io/blog/atom.xml" title="RUBIK Pi Ubuntu24.04 user Guide Atom Feed"><link rel="stylesheet" href="/rubikpi-ubuntu-user-manual-test.github.io/assets/css/styles.9d6804d5.css">
-<script src="/rubikpi-ubuntu-user-manual-test.github.io/assets/js/runtime~main.8fb5887e.js" defer="defer"></script>
-<script src="/rubikpi-ubuntu-user-manual-test.github.io/assets/js/main.10cfadaf.js" defer="defer"></script>
+<script src="/rubikpi-ubuntu-user-manual-test.github.io/assets/js/runtime~main.0a48e01c.js" defer="defer"></script>
+<script src="/rubikpi-ubuntu-user-manual-test.github.io/assets/js/main.5fd67221.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -64,33 +64,41 @@
 <p>AI Hub 提供了帮助开发人员针对视觉、音频和语音用例的机器学习模型在设备上进行优化、验证和部署的方法和途径。</p>
 <p><img decoding="async" loading="lazy" src="/rubikpi-ubuntu-user-manual-test.github.io/assets/images/diagram-2-89ffe9ba5e79847b1d6d46201006a307.png" width="1242" height="516" class="img_ev3q"></p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="环境配置">环境配置<a href="#环境配置" class="hash-link" aria-label="Direct link to 环境配置" title="Direct link to 环境配置">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="在您的计算机上安装miniconda和配置python环境">在您的计算机上安装miniconda和配置Python环境。<a href="#在您的计算机上安装miniconda和配置python环境" class="hash-link" aria-label="Direct link to 在您的计算机上安装miniconda和配置Python环境。" title="Direct link to 在您的计算机上安装miniconda和配置Python环境。">​</a></h5>
 <ol>
 <li>
-<p>安装miniconda</p>
+<p>在您的计算机上安装miniconda和配置Python环境。</p>
+<ol>
+<li>安装miniconda。</li>
+</ol>
 <p>从<a href="https://www.anaconda.com/download" target="_blank" rel="noopener noreferrer">miniconda</a>官网下载miniconda并安装。</p>
-</li>
-<li>
-<p>打开命令命令行窗口</p>
+<ol start="2">
+<li>打开命令命令行窗口。</li>
+</ol>
 <div class="tabs-container tabList__CuJ"><ul role="tablist" aria-orientation="horizontal" class="tabs"><li role="tab" tabindex="0" aria-selected="true" class="tabs__item tabItem_LNqP tabs__item--active">Windows</li><li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_LNqP">macOS/Linux</li></ul><div class="margin-top--md"><div role="tabpanel" class="tabItem_Ymn6"><p>安装完成后,通过 Start 菜单打开 <a href="https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html" target="_blank" rel="noopener noreferrer">Anaconda </a>提示符窗口。</p></div><div role="tabpanel" class="tabItem_Ymn6" hidden=""><p>安装完成后,打开一个新的 shell 窗口。</p></div></div></div>
-</li>
-<li>
-<p>为AI Hub配置一个Python的虚拟环境</p>
+<ol start="3">
+<li>为AI Hub配置一个Python的虚拟环境</li>
+</ol>
 <p>在打开的命令行窗口中输入如下命令：</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">conda activate</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">conda create python=3.10 -n qai_hub</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">conda activate qai_hub</span><br></span></code></pre></div></div>
 </li>
-</ol>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="安装-ai-hub-python-客户端">安装 AI Hub Python 客户端。<a href="#安装-ai-hub-python-客户端" class="hash-link" aria-label="Direct link to 安装 AI Hub Python 客户端。" title="Direct link to 安装 AI Hub Python 客户端。">​</a></h5>
+<li>
+<p>安装 AI Hub Python 客户端。</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">pip3 install qai-hub</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">pip3 install &quot;qai-hub[torch]&quot;</span><br></span></code></pre></div></div>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="登录-ai-hub-">登录 AI Hub 。<a href="#登录-ai-hub-" class="hash-link" aria-label="Direct link to 登录 AI Hub 。" title="Direct link to 登录 AI Hub 。">​</a></h5>
+</li>
+<li>
+<p>登录 AI Hub 。</p>
 <p>前往 <a href="https://aihub.qualcomm.com/" target="_blank" rel="noopener noreferrer">AI Hub</a> 并使用 Qualcomm ID 登录,查看所创建作业的相关信息。</p>
 <p>登录后，导航至 Account &gt; Settings &gt; API Token 。此时应提供一个可用于配置客户端的 API 令牌。</p>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="在终端使用以下命令通过-api-令牌配置客户端">在终端，使用以下命令通过 API 令牌配置客户端。<a href="#在终端使用以下命令通过-api-令牌配置客户端" class="hash-link" aria-label="Direct link to 在终端，使用以下命令通过 API 令牌配置客户端。" title="Direct link to 在终端，使用以下命令通过 API 令牌配置客户端。">​</a></h5>
+</li>
+<li>
+<p>在终端，使用以下命令通过 API 令牌配置客户端。</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">qai-hub configure --api_token &lt;INSERT_API_TOKEN&gt;</span><br></span></code></pre></div></div>
 <p>然后使用下面命令查看支持设备列表来验证 AI Hub Python 客户端是否安装成功：</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">qai-hub list-devices</span><br></span></code></pre></div></div>
 <p>出现如下结果说明 AI Hub Python 客户端安装成功：</p>
 <p><img decoding="async" loading="lazy" src="/rubikpi-ubuntu-user-manual-test.github.io/assets/images/img_v3_02oe_a7351608-c493-478b-a3e4-4929e3b3c17g-385abd9ab28cb4c23f2e0548777a9177.png" width="1280" height="833" class="img_ev3q"></p>
+</li>
+</ol>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="ai-hub-工作流程">AI Hub 工作流程<a href="#ai-hub-工作流程" class="hash-link" aria-label="Direct link to AI Hub 工作流程" title="Direct link to AI Hub 工作流程">​</a></h4>
 <ul>
 <li>使用预优化模型。</li>
@@ -206,7 +214,7 @@
 <ul>
 <li>效果图如下：</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="/rubikpi-ubuntu-user-manual-test.github.io/assets/images/image-9-e95589e4f1bc491563d8cde05abff732.png" width="1280" height="720" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="/rubikpi-ubuntu-user-manual-test.github.io/assets/images/diagram-29-cc32640c9f279203020de85f7b24bb51.png" width="975" height="548" class="img_ev3q"></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="姿态识别示例程序gst-ai-pose-detection">姿态识别示例程序：gst-ai-pose-detection<a href="#姿态识别示例程序gst-ai-pose-detection" class="hash-link" aria-label="Direct link to 姿态识别示例程序：gst-ai-pose-detection" title="Direct link to 姿态识别示例程序：gst-ai-pose-detection">​</a></h3>
 <p>gst-ai-pose-detection示例程序允许您检测图像或视频中主体的身体姿势。</p>
 <p>下图显示了从来自摄像头、文件或RTSP源的输入流，执行预处理，在AI硬件上进行推理，并将人体姿态检测结果可视化显示在屏幕上的流程。</p>
